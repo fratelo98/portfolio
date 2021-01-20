@@ -9,11 +9,10 @@
      <title>Cyber Sanguine</title>
      <script src="js/script.js"></script>
 </head>
-
 <body>
 <header>
-  <nav id="navbar">
-  <nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
+  <div class="navbar">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container">
        <a class="navbar-brand" href="#index.html">Cyber sanguine man</a>
        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleCenteredNav" aria-controls="navbarsExampleCenteredNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,13 +21,13 @@
        <div class="collapse navbar-collapse navbar-collapse justify-content-md-end" id="navbarsExampleCenteredNav">
           <ul class="navbar-nav">
              <li class="nav-item ">
-                <a class="nav-link" href="#inex.html">Home </a>
-             </li>
-             <li class="nav-item ">
-                <a class="nav-link" href="#about-section">About me</a>
+                <a class="nav-link" href="#inex.html">Home</a>
              </li>
              <li class="nav-item ">
                 <a class="nav-link" href="#experience">Skills</a>
+             </li>
+             <li class="nav-item ">
+                <a class="nav-link" href="#about-section">About me</a>
              </li>
              <li class="nav-item ">
               <a class="nav-link" href="#contact">Contact me</a>
@@ -36,31 +35,9 @@
           </ul>
        </div>
     </div>
- </nav>
+ </div>
 </nav>
-<script>
-  $(document).ready(function() {
-    var $navbar = $("#navbar");
-    
-    AdjustHeader(); // Incase the user loads the page from halfway down (or something);
-    $(window).scroll(function() {
-        AdjustHeader();
-    });
-    
-    function AdjustHeader(){
-      if ($(window).scrollTop() > 60) {
-        if (!$navbar.hasClass("navbar-fixed-top")) {
-          $navbar.addClass("navbar-fixed-top");
-        }
-      } else {
-        $navbar.removeClass("navbar-fixed-top");
-      }
-    }
-  });
-</script>
- 
- 
-   
+</div>
 </header>
 
 
@@ -143,6 +120,7 @@
   <!--End about section-->   
 
   <!--contact section-->     
+  <div id="contact"></div>
   <div class="container contact-form">
     <h1>Contact me</h1>
     <hr>
@@ -181,6 +159,7 @@
       </div>
   
   </div>
+</div>
 <!--End contact section-->  
 
 <footer>
