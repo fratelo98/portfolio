@@ -5,6 +5,7 @@
 
 body{
     background-color: #f9f9f9;
+    
 }
 
 
@@ -17,9 +18,12 @@ img {
 
 
 
-.navbar {
-    margin-bottom: 70px;
+.navbar{
+    margin-bottom: 110px;
+    background-color:#111618 !important;
+    
   }
+
 
 .main-cta-btn { 
     text-decoration: none !important;
@@ -43,7 +47,6 @@ img {
     background-color: transparent;
 
 }
-
 
 
 
